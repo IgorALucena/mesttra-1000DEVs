@@ -33,17 +33,17 @@ let contMin = 0;
 let contEspecial=0;
 let sequencia = "";
 
-let nome = prompt("Digite o seu nome: ");
+let nome = prompt("Digite o seu nome completo: ");
 let data = prompt("Digite sua data nascimento: ");
-let senha = prompt("Digite seu senha: ");
+let senha = prompt("Digite sua senha: ");
 
 let quebrado = nome.split(" ");
 let quebradoData = data.split("/");
 
 for(let i = 0; i<senha.length; i++){
 //GRUPO 2:
-    //Se a senha é maior que 8:
-    if(senha.length <8){
+    //Se a senha é menor que 8:
+    if(senha.length<8){
         console.log("A senha precisa ter no mínimo 8 caracteres!");
         return;
     }
