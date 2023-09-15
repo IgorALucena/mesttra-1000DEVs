@@ -94,7 +94,7 @@ for(let i = 0; i<senha.length; i++){
             contMin++
         }
     }
-    //Se há caracteres ESPECIAL na senha:
+    //Se há caracteres especiais na senha:
     for(let j = 0; j<ESPECIAL.length; j++){
         if(senha.charAt(i)==ESPECIAL.charAt(j)){
             contEspecial++
