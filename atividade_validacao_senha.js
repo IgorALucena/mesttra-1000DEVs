@@ -80,7 +80,7 @@ function validaSenha(senhaP, nomeP, dataP) {
         for (let j = 3; j <= 120; j++) {
             let sequencia = String.fromCharCode(j) + String.fromCharCode(j + 1) + String.fromCharCode(j + 2)
             if (senhaP.includes(sequencia)) {
-                console.log("A senha não pode conter mais de 3 caracteres em sequência!");
+                console.log("A senha não pode conter 3 caracteres em sequência!");
                 return valida;
             }
         }
@@ -127,7 +127,7 @@ function validaSenha(senhaP, nomeP, dataP) {
         return validaG1;    
     }
     else {
-        console.log(`Lembre-se de caracteres especiais, letras minusculas e maisculas e dígitos!`);
+        console.log(`Lembre-se de caracteres especiais, letras minúsculas e maiúsculas e dígitos!`);
         return valida;   
     }
 }
